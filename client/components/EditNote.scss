@@ -1,0 +1,29 @@
+@import '../scss/base';
+@import '../scss/format';
+@import '../scss/variables';
+
+.EditNote {
+  @extend .flex;
+  @extend .col;
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    @extend .flex;
+    @extend .row;
+    justify-content: space-between;
+
+    button.main {
+      background-color: #5bc4e4;
+    }
+  }
+}

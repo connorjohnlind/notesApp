@@ -1,0 +1,47 @@
+@import '../scss/base';
+@import '../scss/format';
+@import '../scss/variables';
+
+.Note {
+  background-color: white;
+  box-shadow: 0px 10px 24px rgba(13,13,18,0.04);
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 12pt;
+  overflow-wrap: break-word;
+  overflow-y: hidden;
+
+  .title-bar {
+    @extend .flex;
+    @extend .row;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+    }
+
+    .button-wrapper {
+      @extend .flex;
+      @extend .row;
+
+      div {
+        margin-left: 10px;
+        cursor: pointer;
+
+        &:hover {
+          color: #5bc4e4;
+        }
+      }
+
+    }
+  }
+
+  .text-body {
+    font-size: 10pt;
+    white-space: pre-line;
+  }
+}
