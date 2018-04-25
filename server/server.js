@@ -1,8 +1,5 @@
-require('./config/config');
-
 const path = require('path');
 const express = require('express');
-const bodyParser = require('body-parser');
 const compression = require('compression');
 
 const app = express();

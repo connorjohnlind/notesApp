@@ -1,4 +1,6 @@
-# Blend App
+# Notes App
+
+`npm i` to install dependencies
 
 `npm run dev` for development environment
 
